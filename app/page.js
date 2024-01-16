@@ -1,9 +1,7 @@
-import Image from 'next/image';
-import pic from '../public/Under Development.jpg';
 
 export default function Home() {
     return (
-        <main>
+        <div className='home'>
             <div>
                 <h1>Tech 23 Gaming</h1>
                 <h2>Welcome to Tech 23 Gaming: Where Innovation Fuels Digital Excellence!</h2>
@@ -88,13 +86,6 @@ export default function Home() {
                     and embrace the future of technology with confidence. Contact us today to unlock innovation and gaming excellence.
                 </h2>
             </div>
-            <Image
-                src={pic}
-                alt={'Under Development'}
-                width={700}
-                height={200}
-                style={{ backgroundColor: 'black', margin: 0 }}
-            />
-        </main>
+        </div>
     )
 }

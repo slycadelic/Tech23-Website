@@ -1,3 +1,25 @@
+# Official Website for Tech 23 Gaming Solutions (**built using Next.js**)
+#### Deployed to https://www.tech23gaming.com/ via vercel.
+
+## References for Design
++ https://www.capgemini.com/in-en/
++ https://sakrat.com/
++ https://theninehertz.com/
++ https://internut.my/
++ https://www.konstantinfo.com/app-development-company
++ https://www.bytestechnolab.com/
++ https://geekyants.com/
++ https://mobisoftinfotech.com/
++ https://consultantsfromasia.com/
++ https://www.dreamsoft4u.com/
++ https://binmile.com/?utm_source=listing&utm_medium=Designrush
++ https://www.solutionanalysts.com/
++ https://www.emizentech.com/
++ https://www.inventcolabssoftware.com/
+
+
+## Default Configuration
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

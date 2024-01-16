@@ -3,6 +3,9 @@ import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
+import Image from 'next/image';
+import pic from '@/public/Under Development.jpg';
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -15,7 +18,16 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <body className={inter.className}>
                 <Header />
-                {children}
+                <main>
+                    <Image
+                        src={pic}
+                        alt={'Under Development'}
+                        width={700}
+                        height={200}
+                        style={{ backgroundColor: 'black', margin: 0 }}
+                    />
+                    {children}
+                </main>
                 <Footer />
             </body>
         </html>
