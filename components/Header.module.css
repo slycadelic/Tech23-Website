@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap');
+/* font-family: 'Kelly Slab', sans-serif; */
+
+
+.header
+{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Tektur', sans-serif;
+    height: 90px;
+    z-index: 10;
+    position: fixed;
+}
+
+/* header nav links styling */
+.navLinks
+{
+    width: calc(100% - 240px);
+    max-width: 1200px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: clamp(12px, 1.5vw, 20px);
+}
+
+.navLink
+{
+    text-decoration: none;
+    position: relative;
+}
+
+.navLink::after
+{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 40, 0);
+    /* Adjust this color as needed */
+    transition: width 0.3s ease-in-out;
+    /* Transition for underline width */
+}
+
+.navLink:hover::after,
+.navLink.active::after
+{
+    width: 100%;
+    /* Full underline on hover and active */
+}
+
+.mobileNavIcon
+{
+    display: none;
+    color: white;
+    padding-right: 15px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.navLinksMobile
+{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 40px 0;
+    color: white;
+    font-size: 24px;
+    background-color: hsla(0, 0%, 14%, 1);
+    background-image:
+        radial-gradient(at 40% 20%, hsla(0, 4%, 25%, 1) 0px, transparent 50%),
+        radial-gradient(at 80% 0%, hsla(30, 39%, 20%, 0.7) 0px, transparent 50%),
+        radial-gradient(at 0% 50%, hsla(0, 3%, 15%, 1) 0px, transparent 50%),
+        radial-gradient(at 80% 50%, hsla(0, 8%, 10%, 1) 0px, transparent 50%),
+        radial-gradient(at 0% 100%, hsla(16, 68%, 20%, 1) 0px, transparent 50%);
+    z-index: 8;
+}
+
+@media screen and (max-width: 600px)
+{
+    .navLinks
+    {
+        display: none;
+    }
+
+    .mobileNavIcon
+    {
+        display: block;
+    }
+
+    .navLinksMobile
+    {
+        display: flex;
+    }
+}

@@ -73,7 +73,6 @@ main
     text-align: justify;
 }
 
-.header,
 .footer
 {
     width: 100%;
@@ -85,42 +84,4 @@ main
     height: 80px;
     z-index: 10;
     position: fixed;
-}
-
-/* header nav links styling */
-.navLinks
-{
-    width: calc(100% - 240px);
-    max-width: 1200px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.navLink
-{
-    text-decoration: none;
-    position: relative;
-}
-
-.navLink::after
-{
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: rgb(255, 255, 255);
-    /* Adjust this color as needed */
-    transition: width 0.3s ease-in-out;
-    /* Transition for underline width */
-}
-
-.navLink:hover::after,
-.navLink.active::after
-{
-    width: 100%;
-    /* Full underline on hover and active */
 }

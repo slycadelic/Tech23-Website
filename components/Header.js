@@ -3,10 +3,12 @@
 import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { FaBars, FaTimes } from "react-icons/fa";
 import Image from 'next/image';
-import Logo from '../public/logo.png';
+import Logo from '../public/Logo_transparent.png';
 import Link from "next/link";
 import useWindowScroll from "@/hooks/useWindowScroll";
+import styles from './Header.module.css';
 
 const Header = () => {
 
@@ -36,8 +38,10 @@ const Header = () => {
         router.push(href);
     };
 
+    // TODO: Add fonts
+
     return (
-        <div className='header' style={{ backgroundColor }}>
+        <div className={styles.header} style={{ backgroundColor }}>
             <Link href='/'>
                 <Image
                     src={Logo}
@@ -46,16 +50,16 @@ const Header = () => {
                     height={80}
                 />
             </Link>
-            <div className="navLinks">
+            <div className={styles.navLinks}>
                 {links.map(({ id, link, href }) => (
                     <Link href={href} key={id}>
                         <motion.div
-                            className='navLink'
-                            whileHover={{ scale: 1.1, color: 'rgb(126,125,124)' }} // Scale up and change color on hover
+                            className={styles.navLink}
+                            whileHover={{ scale: 1.1, color: 'rgb(255,40,0)' }} // Scale up and change color on hover
                             whileTap={{ scale: 0.9 }} // Scale down on click
                             onClick={() => handleLinkClick(id, href)}
                             initial={{ borderBottom: "2px solid transparent" }} // Initial state of underline
-                            animate={{ borderBottom: activeLink === id ? "2px solid white" : "2px solid transparent" }} // Animate underline
+                            animate={activeLink === id ? { borderBottom: "2px solid rgb(255,40,0)", color: 'rgb(255,40,0)' } : {}} // Animate underline
                         >
                             {link}
                         </motion.div>
@@ -63,6 +67,26 @@ const Header = () => {
                 ))}
             </div>
             <span style={{ width: '80px' }} />
+            <div onClick={() => setNav(!nav)} className={styles.mobileNavIcon}>
+                {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+            </div>
+            {nav && (
+                <div className={styles.navLinksMobile}>
+                    {links.map(({ id, link, href }) => (
+                        <Link href={href} key={id}>
+                            <motion.div
+                                className={styles.navLink}
+                                whileTap={{ scale: 0.9 }} // Scale down on click
+                                onClick={() => handleLinkClick(id, href)}
+                                initial={{ borderBottom: "2px solid transparent" }} // Initial state of underline
+                                animate={activeLink === id ? { borderBottom: "2px solid rgb(255,40,0)", color: 'rgb(255,40,0)' } : {}} // Animate underline
+                            >
+                                {link}
+                            </motion.div>
+                        </Link>
+                    ))}
+                </div>
+            )}
         </div>
     )
 }
