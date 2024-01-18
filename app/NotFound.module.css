@@ -1,0 +1,161 @@
+/* Not Found Page */
+.notFound
+{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    color: #fff;
+    font-family: sans-serif;
+    background: linear-gradient(-45deg, #0227a3, #fa3d04, #2e2e2e, #2c2c2c);
+    background-size: 400% 400%;
+    animation: Gradient 45s ease infinite;
+    -webkit-animation: Gradient 45s ease infinite;
+}
+
+.vh
+{
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.vh>div
+{
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.wrap
+{
+    text-align: center;
+}
+
+.wrap h1
+{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 90px;
+    cursor: default;
+}
+
+.wrap h2
+{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0 0 80px;
+    cursor: default;
+}
+
+.wrap>div
+{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.button
+{
+    width: 200px;
+    padding: 4px;
+    border-radius: 12px;
+    background: linear-gradient(to bottom, #ffffff, rgba(170, 178, 184, 0.4));
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+.button:active
+{
+    box-shadow: 0 0px 1px rgba(0, 0, 0, 0.5);
+    transform: scale(0.995);
+}
+
+.button:hover
+{
+    background: transparent;
+}
+
+.buttonInner
+{
+    background: linear-gradient(to bottom, rgba(170, 178, 184, 0.4), rgba(255, 255, 255, 0.8));
+    border-radius: 8px;
+    padding: 2px;
+}
+
+.buttonContent
+{
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.button a
+{
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+@-webkit-keyframes Gradient
+{
+    0%
+    {
+        background-position: 0% 50%
+    }
+
+    50%
+    {
+        background-position: 100% 50%
+    }
+
+    100%
+    {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient
+{
+    0%
+    {
+        background-position: 0% 50%
+    }
+
+    50%
+    {
+        background-position: 100% 50%
+    }
+
+    100%
+    {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient
+{
+    0%
+    {
+        background-position: 0% 50%
+    }
+
+    50%
+    {
+        background-position: 100% 50%
+    }
+
+    100%
+    {
+        background-position: 0% 50%
+    }
+}

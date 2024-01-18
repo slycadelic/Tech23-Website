@@ -6,7 +6,12 @@ import Footer from '@/components/Footer';
 import Image from 'next/image';
 import pic from '@/public/Under Development.jpg';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
+
+// To prevent oversized icons due to default styling.
+// import '@fortawesome/fontawesome-svg-core/styles.css';
+// import { config } from "@fortawesome/fontawesome-svg-core";
+// config.autoAddCss = false;
 
 export const metadata = {
     title: 'Tech23 Gaming',
