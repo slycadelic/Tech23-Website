@@ -1,52 +1,52 @@
 # Official Website for Tech 23 Gaming Solutions (**built using Next.js**)
 #### Deployed to https://www.tech23gaming.com/ via vercel.
 
-# References for Design
+## References for Design
 
-## Sakrat
+### Sakrat
 + https://sakrat.com/
 + Good header and footer 
 + All pages have a main section with contact us and marketing banner in bottom.
 + Subtle animations in background
 + Good Go-to-top button
 
-## NineHertz
+### NineHertz
 + https://theninehertz.com/
 + Good components, banners and animating carousels
 
-## Internut
+### Internut
 + https://internut.my/
 + Good styling with color scheme on homepage with header & footer.
 + Good transitions between routes.
 
-## Bytes Technolab
+### Bytes Technolab
 + https://www.bytestechnolab.com/
 + Hide header and shift hero section into background on scroll down.
 + Good content for Services offered explanations.
 
-## Mobisoft Infotech
+### Mobisoft Infotech
 + https://mobisoftinfotech.com/
 + Animating carousels with background images.
 
-## DreamSoft4u
+### DreamSoft4u
 + https://www.dreamsoft4u.com/
 + Good Contact Us section
 + Good content on services offered
 
-## Consultants From Asia
+### Consultants From Asia
 + https://consultantsfromasia.com/
 + Good content of Tech Stack used on home page
 
-## Binmile
+### Binmile
 + https://binmile.com/
 + Animating carousels with background images auto-play.
 
-## Emizentech
+### Emizentech
 + https://www.emizentech.com/
 + Good portfolio design for mobile apps
 + Homepage portfolio section fixed phone background with changing projects.
 
-# Getting Started
+## Getting Started
 First, run the development server:
 
 ```bash

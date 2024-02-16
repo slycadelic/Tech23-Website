@@ -4,8 +4,8 @@
 
 :root
 {
-    --primary: rgb(255, 40, 0);
-    --primaryBG: rgb(42, 42, 42);
+    --primary: #ff2800;
+    --primaryBG: #1b1b1b;
 }
 
 body
@@ -19,37 +19,60 @@ main
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 120px;
 }
 
 /* Homepage */
 .home
 {
-    min-height: calc(100vh - 80px);
+    min-height: calc(100vh - 200px);
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: flex-start;
-
+    padding: 10px;
+    color: white;
 }
 
-.home>div
+.home>div:nth-child(1)
 {
-    padding: 40px;
-    color: white;
+    display: flex;
+    flex-flow: row wrap-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.home>div:nth-child(1)>div
+{
+    flex: 1;
+    min-width: 350px;
+    padding: 20px;
+}
+
+@keyframes BGRotate
+{
+    0%
+    {
+        background-position: -10% 110%, 0px center;
+    }
+
+    100%
+    {
+        background-position: 95% 0%, 0px center;
+    }
 }
 
 .home h1
 {
-    font-size: 30px;
-    padding: 30px;
+    font-size: clamp(50px, 5vw, 100px);
+    padding: 25px;
     text-align: center;
 }
 
 .home h2
 {
-    font-size: 26px;
-    padding: 26px;
+    font-size: clamp(40px, 4vw, 80px);
+    padding: 20px;
 }
 
 .home h3
@@ -62,9 +85,8 @@ main
 
 .home h4
 {
-    font-size: 18px;
-    font-weight: bold;
-    padding: 18px;
+    font-size: clamp(20px, 2vw, 40px);
+    padding: 10px;
 }
 
 .home p

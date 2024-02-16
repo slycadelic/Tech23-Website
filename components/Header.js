@@ -12,6 +12,8 @@ import styles from './Header.module.css';
 
 const Header = () => {
 
+    // Home, Services, Technologies, Portfolio, About Us, Careers
+    // TODO: Refer to https://sakrat.com/
     const links = [
         { id: 0, link: "Home", href: '/' },
         { id: 1, link: "About", href: '/About' },
@@ -46,8 +48,8 @@ const Header = () => {
                 <Image
                     src={Logo}
                     alt={'Tech 23 Gaming Logo'}
-                    width={80}
-                    height={80}
+                    width={190}
+                    height={190}
                 />
             </Link>
             <div className={styles.navLinks}>

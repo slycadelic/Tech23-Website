@@ -9,9 +9,10 @@
     align-items: center;
     justify-content: space-between;
     font-family: 'Tektur', sans-serif;
-    height: 90px;
+    height: 120px;
     z-index: 10;
     position: fixed;
+    box-shadow: 5px 0px 10px 0 black;
 }
 
 /* header nav links styling */

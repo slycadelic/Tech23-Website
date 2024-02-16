@@ -1,19 +1,28 @@
+import Image from "next/image";
+import { Kelly_Slab, Crimson_Pro } from 'next/font/google';
+const kelly = Kelly_Slab({ subsets: ['latin'], weight: '400' });
+const crimsonPro = Crimson_Pro({ subsets: ['latin'] });
 
 export default function Home() {
     return (
         <div className='home'>
             <div>
-                <h1>Tech 23 Gaming</h1>
-                <h2>Welcome to Tech 23 Gaming: Where Innovation Fuels Digital Excellence!</h2>
-                <p>
-                    Embark on a transformative journey with Tech 23 Gaming,
-                    a leading force in software services dedicated to crafting exceptional
-                    web and mobile applications for businesses.
-                    <br />
-                    Our expertise extends beyond
-                    conventional development, encompassing a rich portfolio of in-house products
-                    designed to revolutionize your digital landscape.
-                </p>
+                <div>
+                    <h1 className={kelly.className}>Tech 23 Gaming</h1>
+                    <h2 className={crimsonPro.className}>Welcome to Tech 23 Gaming: Where Innovation Fuels Digital Excellence!</h2>
+                    <h4 className={crimsonPro.className}>
+                        Embark on a transformative journey with Tech 23 Gaming,
+                        a leading force in software services dedicated to crafting exceptional
+                        web and mobile applications for businesses.
+                        <br />
+                        Our expertise extends beyond
+                        conventional development, encompassing a rich portfolio of in-house products
+                        designed to revolutionize your digital landscape.
+                    </h4>
+                </div>
+                <Image src='/banner2.png' width={800} height={400} alt={'main banner'} />
+            </div>
+            <div>
                 <h3>
                     Our Expertise
                 </h3>
@@ -80,11 +89,11 @@ export default function Home() {
                     Whether you're a startup or an established enterprise,
                     Tech 23 Gaming's services can adapt to the evolving needs of your business.
                 </p>
-                <h2>
+                <h4>
                     Explore the possibilities with Tech 23 Gaming.
                     Elevate your digital presence, streamline your operations,
                     and embrace the future of technology with confidence. Contact us today to unlock innovation and gaming excellence.
-                </h2>
+                </h4>
             </div>
         </div>
     )

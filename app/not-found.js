@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import NotFoundImage from '@/public/404.jpg'; // Import your 404 image component or specify the image source directly
-import Image from 'next/image';
 import styles from './NotFound.module.css';
 
 export default function NotFound() {
@@ -16,7 +14,7 @@ export default function NotFound() {
                                 <div className={styles.buttonInner}>
                                     <div className={styles.buttonContent}>
                                         <Link href="/">
-                                            <button>Return Home</button>
+                                            <span>Return Home</span>
                                         </Link>
                                     </div>
                                 </div>
